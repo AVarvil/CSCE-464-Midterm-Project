@@ -1,0 +1,71 @@
+@keyframes slideleft {
+    from {
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0%;
+    }
+}
+
+#desert{
+    position: absolute;
+    background-image: url("desert.png");
+    height: 201px;
+    width: 100%;
+    animation: slideleft 600s infinite linear;
+}
+
+.dino{
+    background-image: url("trex.png");
+    height: 57px;
+    width: 57px;
+    position: absolute;
+    bottom: 0;
+}
+
+.obstacle{
+    background-image: url('cacti.png');
+    width: 32px;
+    height: 33px;
+    position: absolute;
+    bottom: 0;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}

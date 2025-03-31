@@ -1,0 +1,19 @@
+@media screen and (max-width: 450px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+}
+
+body{
+    width: 900px;
+    margin: 20px auto 0 auto;
+    font-size: small;
+}
+
+img{
+    max-width:80%;
+}
+
+.flex_container{
+    flex-direction: column;
+    max-width: 80%;
+}

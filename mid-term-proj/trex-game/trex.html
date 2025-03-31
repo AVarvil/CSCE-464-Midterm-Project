@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Varvil Mid-Term Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Projects</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="../index.html">Home</a>
+            <a href="../rivals/rivals.html">Marvel Rivals Info Project</a>
+            <a href="../whac-a-mole/whacamole.html">Whac-a-mole Game</a>
+            <a href="../trex-game/trex.html">T-rex Game</a>
+        </div>
+    </div>
+    <div id="desert">
+        <h2 id="alert"></h2>
+        <div class="grid">
+            <div class="dino"></div>
+        </div>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+    
+</body>
+</html>
